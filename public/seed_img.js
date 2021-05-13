@@ -1,31 +1,31 @@
-const images =  [
-   {
-      id: 1,
-      name: "Coconut",
-      url: "https://femina.wwmindia.com/content/2018/sep/inner11535961375.jpg"
-   },
-   {
-      id: 2,
-      name: "Jackfruit",
-      url: "https://blueskytravelvietnam.com/public/uploads/images/LAOS/Jackfruit-of-Vietnam.jpg"
-   },
-   {
-      id: 3,
-      name: "Mangosteen",
-      url: "https://www.verywellfit.com/thmb/tSyuO1Pjg0O48TL7qhTc6ObLAYM=/2121x1414/filters:fill(FFDB5D,1)/GettyImages-824746434-5ac79403ba61770037db6fc9.jpg"
-   },
-   {
-      id: 4,
-      name: "Rambutan",
-      url: "https://res.cloudinary.com/sagacity/image/upload/c_crop,h_2239,w_3366,x_193,y_670/c_limit,dpr_auto,f_auto,fl_lossy,q_80,w_1200/Rambutan_togufg.jpg"
-   },
-   {
-      id: 5,
-      name: "Pomelo",
-      url: "https://vajiramandravi.s3.us-east-1.amazonaws.com/media/2020/4/25/8/37/3/DEVANAHALLI_POMELO.jpg"
-   },
+const images = [
+    {
+        id: 1,
+        name: "Graduate",
+        detail: "It is such a great feeling that I will finally graduate, but the fact that I have to go out living in the real world of chaos and competition is causing me to get a panic attack.",
+        url: "https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    },
+    {
+        id: 2,
+        name: "Go Thailand",
+        detail: "After graduation, it's time to go back to my country, Thailand. It has been almost 5 years that I have been in the US. This is such an exciting moment and I will miss the life here a lot.",
+        url: "https://images.pexels.com/photos/3770090/pexels-photo-3770090.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+    },
+    {
+        id: 3,
+        name: "Stay on an island",
+        detail: "I think about spending time with myself on a small island, watching the waves lapping the shore, precipitating my thoughts and planning on my own business.",
+        url: "https://images.pexels.com/photos/1007657/pexels-photo-1007657.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    },
+
+    {
+        id: 4,
+        name: "Be back like a Phoenix",
+        detail: "In the fairytale, Phoenix will be reborn from its own ashes to an even better and more skillful form. I will be like that too. Hopefully I can finally come up with some great ideas that could stun the world!",
+        url: "https://www.bbntimes.com/images/articles/companies/Phoenix_.jpg"
+    },
 ]
 
-const mappedImages = images.map(img => `<div><img src="${img.url}" alt="${img.name}"/>${img.name}</div>`).join("")
+const mappedImages = images.map(img => `<div><img src="${img.url}" alt="${img.name}"/>${img.name}</div><div class="detail">${img.detail}</div>`).join("")
 
 document.getElementById('container').innerHTML = mappedImages
